@@ -24,7 +24,8 @@ const List = () => {
     })
     await fetchList();
     if (response.data.success) {
-      toast.success(response.data.message);
+      toast.success();
+    
     }
     else {
       toast.error("Error")

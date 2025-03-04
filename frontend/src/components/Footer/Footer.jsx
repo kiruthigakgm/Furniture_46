@@ -7,7 +7,8 @@ const Footer = () => {
     <div className='footer' id='footer'>
       <div className="footer-content">
         <div className="footer-content-left">
-            <img src={assets.logo} alt="" />
+        <img src={assets.logo} alt="Logo" className="footer-logo" />
+
             <p>Stay Connected with Us!Explore our extensive range of furnitures designed to get home beautiful.</p>
             
         </div>
@@ -28,7 +29,7 @@ const Footer = () => {
             </ul>
         </div>
       </div>
-      <hr />
+      
       
     </div>
   )

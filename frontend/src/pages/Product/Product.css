@@ -1,0 +1,84 @@
+/* Container Styles */
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.product-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.product-header p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Navigation Buttons */
+.product-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Active Category Button */
+.category-button.active {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Content Section */
+.product-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-box {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.category-box h2 {
+  font-size: 22px;
+  color: #333;
+}
+
+/* Utility Classes */
+.no-color {
+  background-color: transparent;
+} 

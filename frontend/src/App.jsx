@@ -11,6 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Verify from './pages/Verify/Verify'
 import About from './pages/About/About'
 import Contact from './pages/Contact/Contact';
+import Product from './pages/Product/Product'
 
 const App = () => {
 
@@ -25,6 +26,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/about' element={<About />}/>
+          <Route path='/product' element={<Product />}/>
           <Route path='/contact' element={<Contact />}/>
           <Route path='/cart' element={<Cart />}/>
           <Route path='/order' element={<PlaceOrder />}/>

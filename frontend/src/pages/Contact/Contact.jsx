@@ -1,19 +1,27 @@
-import React from "react";
-import "./Contact.css";
+import React from 'react';
+import './Contact.css';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <motion.div 
+      className="contact-container"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
       <h1 className="contact-title">Contact Us</h1>
-      <div className="contact-form-container">
-        <form className="contact-form">
-          <input type="text" placeholder="Your Name" className="contact-input" required />
-          <input type="email" placeholder="Your Email" className="contact-input" required />
-          <textarea placeholder="Your Message" rows={4} className="contact-textarea" required></textarea>
-          <button type="submit" className="contact-button">Send Message</button>
-        </form>
+      <p className="contact-text">Get in touch with us for premium furniture and excellent customer service.</p>
+      <div className="contact-image-container">
+        <img src="/play_store.png" alt="Contact Us" className="contact-image" />
       </div>
-    </div>
+      <div className="contact-details">
+        <p><strong>Address:</strong> 5/5,B/C,P.S.G.Complex, Majeeth Street,Kangayam-638701</p>
+        <p><strong>Phone:</strong> 9842087572</p>
+        <p><strong>Email:</strong> prakashfurniture98@gmail.com</p>
+        <p><strong>Working Hours:</strong> Mon - Sun, 9:00 AM - 9:45 PM</p>
+      </div>
+    </motion.div>
   );
 };
 

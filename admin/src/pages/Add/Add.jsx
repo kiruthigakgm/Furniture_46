@@ -31,7 +31,7 @@ const Add = () => {
         formData.append("image", image);
         const response = await axios.post(`${url}/api/food/add`, formData);
         if (response.data.success) {
-            toast.success(response.data.message)
+            toast.success()
             setData({
                 name: "",
                 description: "",
@@ -42,7 +42,7 @@ const Add = () => {
         }
         else {
             console.log(response.data)
-            toast.error(response.data.message)
+            toast.error()
         }
     }
 
